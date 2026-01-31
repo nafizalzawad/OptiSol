@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Link } from "react-router-dom";
 
 const performance = [
   { t: "9am", temp: 62, output: 78 },
@@ -89,21 +90,15 @@ export default function Index() {
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <a className="focus-ring rounded-md" href="#how-it-works">
-                  <Button variant="hero" className="w-full sm:w-auto">
-                    How it works
-                  </Button>
-                </a>
-                <a className="focus-ring rounded-md" href="/dashboard">
-                  <Button variant="glass" className="w-full sm:w-auto">
-                    Dashboard demo
-                  </Button>
-                </a>
-                <a className="focus-ring rounded-md" href="/tech">
-                  <Button variant="outline" className="w-full sm:w-auto">
-                    Tech overview
-                  </Button>
-                </a>
+                <Button asChild variant="hero" className="w-full sm:w-auto">
+                  <Link to="/how-it-works">How it works</Link>
+                </Button>
+                <Button asChild variant="glass" className="w-full sm:w-auto">
+                  <Link to="/dashboard">Dashboard demo</Link>
+                </Button>
+                <Button asChild variant="outline" className="w-full sm:w-auto">
+                  <Link to="/tech">Tech overview</Link>
+                </Button>
               </div>
 
               <div className="mt-10 grid grid-cols-3 gap-4">

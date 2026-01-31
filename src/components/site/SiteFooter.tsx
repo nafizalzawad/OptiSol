@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
-import { Github, Linkedin, QrCode } from "lucide-react";
+import { Github, QrCode } from "lucide-react";
 import githubRepoQr from "@/assets/github-repo-qr.png";
 
 export default function SiteFooter() {
@@ -22,11 +22,7 @@ export default function SiteFooter() {
                   <Github className="h-4 w-4" />
                 </Button>
               </a>
-              <a className="focus-ring rounded-md" href="#" aria-label="LinkedIn">
-                <Button variant="outline" size="icon">
-                  <Linkedin className="h-4 w-4" />
-                </Button>
-              </a>
+
             </div>
           </div>
 
