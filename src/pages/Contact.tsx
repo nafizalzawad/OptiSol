@@ -22,8 +22,7 @@ export default function Contact() {
           <p className="text-xs font-medium tracking-wide text-muted-foreground">CONTACT</p>
           <h1 className="mt-2 text-balance text-4xl font-semibold tracking-tight">Request a demo or share a rooftop scenario.</h1>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            This form is in demo mode (no backend yet). If you want real submissions and email notifications, we’ll wire it
-            to Lovable Cloud.
+            This form is in demo mode (no backend yet). If you want real submissions and email notifications, we can connect it to a backend service.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             <a className="focus-ring rounded-md" href="/downloads/Capstone_Presentation.pptx" download>
@@ -56,7 +55,7 @@ export default function Contact() {
                     onSubmit={(e) => {
                       e.preventDefault();
                       toast.success("Message sent (demo mode)", {
-                        description: "Next step: connect this form to Lovable Cloud storage + email.",
+                        description: "This is a demo. Backend integration required for real emails.",
                       });
                     }}
                   >

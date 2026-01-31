@@ -35,7 +35,7 @@ export default function SiteFooter() {
               onSubmit={(e) => {
                 e.preventDefault();
                 toast.success("Message sent (demo mode)", {
-                  description: "Hook this up to Lovable Cloud whenever you want real submissions.",
+                  description: "This is a demo form. No actual email is sent.",
                 });
               }}
             >
